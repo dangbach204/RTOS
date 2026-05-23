@@ -14,8 +14,8 @@ from math import gcd
 
 # CẤU HÌNH 
 load_dotenv()
-GROQ_KEY = os.getenv("GROQ_API_KEY")
-ZALO_KEY = os.getenv("ZALO_API_KEY")
+GROQ_KEY = os.getenv("GROQ_KEY")
+ZALO_KEY = os.getenv("ZALO_KEY")
 ZALO_SPEAKER = 2
 SAMPLE_RATE  = 48000
 

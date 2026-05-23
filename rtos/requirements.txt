@@ -1,0 +1,6 @@
+sounddevice
+numpy
+scipy
+requests
+python-dotenv
+gpiozero

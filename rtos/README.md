@@ -91,16 +91,13 @@ sudo apt install i2c-tools -y
 ## 5. Tạo môi trường Python và cài thư viện
 
 ```bash
-# Tạo thư mục project
-mkdir -p ~/Desktop/AI_Robot
-cd ~/Desktop/AI_Robot
 
 # Tạo virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 
 # Cài các thư viện Python
-pip install sounddevice numpy scipy requests python-dotenv gpiozero edge-tts
+pip install -r requirements.txt
 
 # Link lgpio vào venv (Pi 5)
 ln -s /usr/lib/python3/dist-packages/lgpio.py .venv/lib/python3.*/site-packages/ 2>/dev/null || true
