@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "mpu6050.c"
+        "blynk_client.c"
+        "fall_detector.c"
+        "buzzer.c"
+        "button.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        esp_wifi
+        esp_event
+        nvs_flash
+        esp_netif
+        esp_http_client
+        freertos
+        log
+        esp_timer
+        mbedtls
+)
